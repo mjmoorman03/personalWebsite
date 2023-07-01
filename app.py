@@ -1,8 +1,6 @@
 import os
 from flask import Flask, flash, redirect, render_template, request, session
 from flask_session import Session
-import csv
-import json
 
 # Configure application
 app = Flask(__name__)
@@ -27,7 +25,13 @@ def after_request(response):
     response.headers["Pragma"] = "no-cache"
     return response
 
-@app.route("/")
+
+@app.route("/", methods=["GET"])
 def index():
-    
     return render_template("index.html")
+
+
+@app.route("/experience", methods=["GET"])
+def experience():
+    """Show experience"""
+    return render_template("experience.html")
