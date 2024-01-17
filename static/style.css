@@ -47,11 +47,10 @@ nav ul li a:hover {
   color: rgba(0, 35, 122, 0.7);
 }
 
-  /* Active/current navbar link */
-  .activeLink {
+.activeLink {
     font-weight : bold;
     color: rgb(185, 1, 1) !important;
-  }
+}
   
 .forms
 {
@@ -73,11 +72,19 @@ button
 .divContent2 {
   width: 550px; 
   display: flex; 
-  margin:auto;
+  margin:auto; 
+  margin-bottom: 18px !important;
   border-radius: 10px;
 }
 
 .divContent1 {
+  width: 250px; 
+  display: flex; 
+  margin:auto;
+  border-radius: 10px;
+}
+
+.divContent3 {
   width: 250px; 
   display: flex; 
   margin:auto;

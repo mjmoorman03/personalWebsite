@@ -35,3 +35,17 @@ def index():
 def experience():
     """Show experience"""
     return render_template("experience.html")
+
+
+@app.route("/misc", methods=["GET"])
+def misc():
+    """Show misc"""
+    return render_template("misc.html")
+
+
+@app.route("/education", methods=["GET"])
+def education():
+    """Show education"""
+    return render_template("education.html")
+
+# projects?
